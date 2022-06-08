@@ -1,10 +1,12 @@
-# Hole
+# [Hole](https://github.com/CoPoKo/Hole)
+
+[![](https://img.shields.io/npm/v/@copoko/hole.svg?style=flat-square)](https://www.npmjs.com/package/@copoko/hole)
 
 CoPoKo Space Hole | Tree Hollow
 
 ## License
 
-[GPL 3.0 Only](https://github.com/CoPoKo/Space/blob/main/LICENSE)
+[GPL 3.0 Only](https://github.com/CoPoKo/Hole/blob/main/LICENSE)
 
 ## Copyright Notice
 
