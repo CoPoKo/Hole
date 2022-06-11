@@ -74,7 +74,6 @@ const defaultConf = {
  * ==========================================================================
 */
 function loading(ctx) {
-  console.log("loading");
   ctx.$root.innerHTML = `
   <div class="hole-loading">
     <div class="bounce1"></div>
@@ -106,14 +105,12 @@ function loading(ctx) {
 */
 function body(ctx) {
   var _a;
-  console.log("body");
   ctx.$root.innerHTML = `
   <div class="hole">
     <div id="hole-list"></div>
     <button id="hole-next-page" type="button" class="btn btn-default card">Next</button>
   </div>`;
   (_a = document.querySelector("#hole-next-page")) == null ? void 0 : _a.addEventListener("click", () => {
-    console.log("nextPage");
     ctx.nextPage();
   });
 }
@@ -139,7 +136,6 @@ function body(ctx) {
  * ==========================================================================
 */
 function card(ctx) {
-  console.log("card");
   for (let index = ctx.index; index < ctx.index + ctx.conf.limit; index++) {
     if (index >= ctx.data.length) {
       ctx.moreHide();
@@ -155,13 +151,11 @@ function card(ctx) {
     it.addEventListener("click", (e) => {
       const ele = e.currentTarget;
       const id = ele.getAttribute("myid");
-      console.log(id);
       ctx.like(id);
     });
   });
 }
 function cardItem(e) {
-  console.log("cardItem");
   return `
   <div id="${e.id}" class="card">
     <div class="card-header">
@@ -216,19 +210,16 @@ class HoleContext {
   }
   fetchData() {
     return __async(this, null, function* () {
-      console.log("FetchData");
       return yield fetch(this.conf.api + "/hole", {
         method: "POST"
       }).then((res) => res.json()).then((res) => {
         res.reverse();
-        console.log(res);
         this.data = res;
       });
     });
   }
   bodyShow() {
     return __async(this, null, function* () {
-      console.log("bodyShow");
       yield this.fetchData();
       if (this.data) {
         body(this);
@@ -237,7 +228,6 @@ class HoleContext {
     });
   }
   nextPage() {
-    console.log("nextPage");
     card(this);
   }
   moreHide() {
@@ -254,9 +244,7 @@ class HoleContext {
           body: JSON.stringify({
             id
           })
-        }).then((res) => res.json()).then((res) => {
-          console.log(res);
-        });
+        }).then((res) => res.json());
         like[id] = true;
         localStorage.setItem("hole-like", JSON.stringify(like));
         document.querySelector(`#like-num-${id}`).innerHTML = `${Number(document.querySelector(`#like-num-${id}`).innerHTML) + 1}`;
@@ -300,6 +288,9 @@ const _Hole = class {
   initComponents() {
     this.ctx.loadingShow();
     this.ctx.bodyShow();
+    if (window.HoleInitComponentsCallback) {
+      window.HoleInitComponentsCallback();
+    }
   }
   nextPage() {
     this.ctx.nextPage();
@@ -312,7 +303,6 @@ const _Hole = class {
         if (!El)
           throw Error(`HTMLElement "${config.id}" was not found.`);
         config.el = El;
-        console.log(config);
       } catch (e) {
         console.error(e);
         throw new Error("Please check your `id` config.");

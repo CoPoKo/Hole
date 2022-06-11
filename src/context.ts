@@ -39,17 +39,14 @@ export default class HoleContext {
     Lodaing(this)
   }
   public async fetchData() {
-    console.log('FetchData')
     return await fetch(this.conf.api + "/hole", {
       method: 'POST',
     }).then(res => res.json()).then(res => {
       res.reverse()
-      console.log(res)
       this.data = res
     })
   }
   public async bodyShow() {
-    console.log('bodyShow')
     await this.fetchData()
     if (this.data) {
       body(this)
@@ -57,7 +54,6 @@ export default class HoleContext {
     }
   }
   public nextPage() {
-    console.log("nextPage");
     card(this)
   }
   public moreHide() {
@@ -72,9 +68,7 @@ export default class HoleContext {
         body: JSON.stringify({
           id: id,
         })
-      }).then(res => res.json()).then(res => {
-        console.log(res)
-      })
+      }).then(res => res.json())
       like[id] = true
       localStorage.setItem("hole-like", JSON.stringify(like))
       document.querySelector(`#like-num-${id}`)!.innerHTML = `${Number(document.querySelector(`#like-num-${id}`)!.innerHTML) + 1}`

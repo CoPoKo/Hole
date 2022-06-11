@@ -23,7 +23,6 @@ import HoleContext from "../context";
 import HoleData from "../types/data";
 
 export default function card(ctx: HoleContext) {
-  console.log('card');
   for (let index = ctx.index; index < ctx.index + ctx.conf.limit; index++) {
     if (index >= ctx.data!.length) {
       ctx.moreHide()
@@ -39,14 +38,12 @@ export default function card(ctx: HoleContext) {
     it.addEventListener("click", (e) => {
       const ele = e.currentTarget! as HTMLElement
       const id = ele.getAttribute('myid')!
-      console.log(id);
       ctx.like(id);
     })
   })
 }
 
 function cardItem(e: HoleData) {
-  console.log('cardItem');
   return `
   <div id="${e.id}" class="card">
     <div class="card-header">

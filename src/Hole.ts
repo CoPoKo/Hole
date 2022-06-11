@@ -39,6 +39,9 @@ export default class Hole {
   private initComponents() {
     this.ctx.loadingShow()
     this.ctx.bodyShow()
+    if (window.HoleInitComponentsCallback) {
+      window.HoleInitComponentsCallback()
+    }
   }
   public nextPage() {
     this.ctx.nextPage()
@@ -51,7 +54,6 @@ export default class Hole {
         const El = document.querySelector<HTMLElement>(config.id)
         if (!El) throw Error(`HTMLElement "${config.id}" was not found.`)
         config.el = El
-        console.log(config);
       } catch (e) {
         console.error(e)
         throw new Error('Please check your `id` config.')
