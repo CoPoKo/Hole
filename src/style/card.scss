@@ -26,11 +26,19 @@
       margin-bottom: 0;
       box-sizing: border-box;
 
+      .avatar {
+        border-radius: 50%;
+        float: left;
+        height: 40px;
+        width: 40px;
+      }
+
       .card-title {
         float: left;
         font-size: 1.1rem;
         font-weight: 400;
         margin: 0;
+        margin-top: 8px;
       }
     }
 
@@ -46,6 +54,20 @@
       padding: 0.75rem 1.25rem;
       background-color: rgba(0, 0, 0, .03);
       border-top: 0 solid rgba(0, 0, 0, .125);
+
+      .heart {
+        width: 15px;
+        margin-right: 8px;
+        cursor: pointer;
+
+        svg path {
+          fill: #3498db;
+        }
+
+        svg:hover path {
+          fill: red;
+        }
+      }
     }
   }
 
