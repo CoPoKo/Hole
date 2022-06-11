@@ -72,6 +72,14 @@ export default class HoleContext {
       like[id] = true
       localStorage.setItem("hole-like", JSON.stringify(like))
       document.querySelector(`#like-num-${id}`)!.innerHTML = `${Number(document.querySelector(`#like-num-${id}`)!.innerHTML) + 1}`
+      this.setlike()
+    }
+  }
+  public setlike() {
+    const ls = localStorage.getItem("hole-like")
+    const like = ls ? JSON.parse(ls) : {}
+    for (const key in like) {
+      document.querySelector("[myid='" + key + "']")!?.classList.add("liked")
     }
   }
 }

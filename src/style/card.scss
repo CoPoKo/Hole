@@ -89,6 +89,10 @@
           fill: red;
         }
       }
+
+      .heart.liked svg path {
+        fill: red !important
+      }
     }
   }
 

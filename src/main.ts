@@ -20,5 +20,8 @@
  * ==========================================================================
 */
 import Hole from './Hole'
+import { version } from "../package.json"
+
+console.log(`CoPoKo Hole v${version}`)
 
 export default Hole

@@ -32,6 +32,7 @@ export default function card(ctx: HoleContext) {
     const $item = document.createElement('div')
     $item.innerHTML = cardItem(e)
     ctx.$root.querySelector('#hole-list')!.appendChild($item)
+    ctx.setlike()
   }
   ctx.index += ctx.conf.limit
   ctx.$root.querySelectorAll('#hole-list .heart')!.forEach(it => {

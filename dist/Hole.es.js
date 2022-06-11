@@ -24,7 +24,7 @@ var __async = (__this, __arguments, generator) => {
     step((generator = generator.apply(__this, __arguments)).next());
   });
 };
-var style = /* @__PURE__ */ (() => '.hole-loading{margin:100px auto 0;width:150px;text-align:center}.hole-loading>div{width:30px;height:30px;background-color:#87ceeb;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}.hole-loading .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.hole-loading .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bouncedelay{0%,80%,to{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes bouncedelay{0%,80%,to{transform:scale(0);-webkit-transform:scale(0)}40%{transform:scale(1);-webkit-transform:scale(1)}}.hole{width:100%;margin-right:auto;margin-left:auto}.hole .btn:not(:disabled):not(.disabled){cursor:pointer}.hole .btn{margin:0 auto;display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.hole .btn-default{background-color:#f8f9fa;border-color:#ddd;color:#444}.hole button{text-transform:none;overflow:visible;margin:0;font-family:inherit;font-size:inherit;line-height:inherit}.hole .float-right{float:right!important}.hole .float-left{float:left!important}.hole img.note-float-left{margin-right:10px}.hole img.note-float-right{margin-left:10px}.hole.dark-mode .btn-default{background-color:#3a4047;color:#fff;border-color:#6c757d}/*!\n * ==========================================================================\n * "CoPoKo Hole" License\n * GNU General Public License version 3.0 (GPLv3)\n * ==========================================================================\n * This file is part of "CoPoKo Hole"\n *\n * "CoPoKo Hole" is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * "CoPoKo Hole" is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with "CoPoKo Hole". If not, see <http://www.gnu.org/licenses/>.\n * ==========================================================================\n*/.hole .card{box-shadow:0 0 1px #00000021,0 1px 3px #0003;margin-bottom:1rem;position:relative;display:flex;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:0 solid rgba(0,0,0,.125);border-radius:.25rem}.hole .card .card-header{background-color:transparent;border-bottom:1px solid rgba(0,0,0,.125);padding:.75rem 1.25rem;position:relative;border-top-left-radius:.25rem;border-top-right-radius:.25rem;margin-bottom:0;box-sizing:border-box}.hole .card .card-header .avatar{border-radius:50%;float:left;height:40px;width:40px}.hole .card .card-header .card-title{float:left;font-size:1.1rem;font-weight:400;margin:8px 0 0}.hole .card .card-body{flex:1 1 auto;min-height:1px;padding:1.25rem}.hole .card .card-footer{padding:.75rem 1.25rem;background-color:#00000008;border-top:0 solid rgba(0,0,0,.125)}.hole .card .card-footer .heart{width:15px;margin-right:8px;cursor:pointer}.hole .card .card-footer .heart svg path{fill:#3498db}.hole .card .card-footer .heart svg:hover path{fill:red}.hole a{color:#007bff;text-decoration:none;background-color:transparent}.hole.dark-mode .card{background-color:#343a40;color:#fff}.hole.dark-mode .card .card-footer{background-color:#0000001a}\n')();
+var style = /* @__PURE__ */ (() => '.hole-loading{margin:100px auto 0;width:150px;text-align:center}.hole-loading>div{width:30px;height:30px;background-color:#87ceeb;border-radius:100%;display:inline-block;-webkit-animation:bouncedelay 1.4s infinite ease-in-out;animation:bouncedelay 1.4s infinite ease-in-out;-webkit-animation-fill-mode:both;animation-fill-mode:both}.hole-loading .bounce1{-webkit-animation-delay:-.32s;animation-delay:-.32s}.hole-loading .bounce2{-webkit-animation-delay:-.16s;animation-delay:-.16s}@-webkit-keyframes bouncedelay{0%,80%,to{-webkit-transform:scale(0)}40%{-webkit-transform:scale(1)}}@keyframes bouncedelay{0%,80%,to{transform:scale(0);-webkit-transform:scale(0)}40%{transform:scale(1);-webkit-transform:scale(1)}}.hole{width:100%;margin-right:auto;margin-left:auto}.hole .btn:not(:disabled):not(.disabled){cursor:pointer}.hole .btn{margin:0 auto;display:inline-block;font-weight:400;color:#212529;text-align:center;vertical-align:middle;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-color:transparent;border:1px solid transparent;padding:.375rem .75rem;font-size:1rem;line-height:1.5;border-radius:.25rem;transition:color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out}.hole .btn-default{background-color:#f8f9fa;border-color:#ddd;color:#444}.hole button{text-transform:none;overflow:visible;margin:0;font-family:inherit;font-size:inherit;line-height:inherit}.hole .float-right{float:right!important}.hole .float-left{float:left!important}.hole img.note-float-left{margin-right:10px}.hole img.note-float-right{margin-left:10px}.hole.dark-mode .btn-default{background-color:#3a4047;color:#fff;border-color:#6c757d}/*!\n * ==========================================================================\n * "CoPoKo Hole" License\n * GNU General Public License version 3.0 (GPLv3)\n * ==========================================================================\n * This file is part of "CoPoKo Hole"\n *\n * "CoPoKo Hole" is free software: you can redistribute it and/or modify\n * it under the terms of the GNU General Public License as published by\n * the Free Software Foundation, either version 3 of the License, or\n * (at your option) any later version.\n *\n * "CoPoKo Hole" is distributed in the hope that it will be useful,\n * but WITHOUT ANY WARRANTY; without even the implied warranty of\n * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n * GNU General Public License for more details.\n *\n * You should have received a copy of the GNU General Public License\n * along with "CoPoKo Hole". If not, see <http://www.gnu.org/licenses/>.\n * ==========================================================================\n*/.hole .card{box-shadow:0 0 1px #00000021,0 1px 3px #0003;margin-bottom:1rem;position:relative;display:flex;flex-direction:column;min-width:0;word-wrap:break-word;background-color:#fff;background-clip:border-box;border:0 solid rgba(0,0,0,.125);border-radius:.25rem}.hole .card .card-header{background-color:transparent;border-bottom:1px solid rgba(0,0,0,.125);padding:.75rem 1.25rem;position:relative;border-top-left-radius:.25rem;border-top-right-radius:.25rem;margin-bottom:0;box-sizing:border-box}.hole .card .card-header .avatar{border-radius:50%;float:left;height:40px;width:40px}.hole .card .card-header .card-title{float:left;font-size:1.1rem;font-weight:400;margin:8px 0 0}.hole .card .card-body{flex:1 1 auto;min-height:1px;padding:1.25rem}.hole .card .card-footer{padding:.75rem 1.25rem;background-color:#00000008;border-top:0 solid rgba(0,0,0,.125)}.hole .card .card-footer .heart{width:15px;margin-right:8px;cursor:pointer}.hole .card .card-footer .heart svg path{fill:#3498db}.hole .card .card-footer .heart svg:hover path{fill:red}.hole .card .card-footer .heart.liked svg path{fill:red!important}.hole a{color:#007bff;text-decoration:none;background-color:transparent}.hole.dark-mode .card{background-color:#343a40;color:#fff}.hole.dark-mode .card .card-footer{background-color:#0000001a}\n')();
 /*!
  * ==========================================================================
  * "CoPoKo Hole" License
@@ -145,6 +145,7 @@ function card(ctx) {
     const $item = document.createElement("div");
     $item.innerHTML = cardItem(e);
     ctx.$root.querySelector("#hole-list").appendChild($item);
+    ctx.setlike();
   }
   ctx.index += ctx.conf.limit;
   ctx.$root.querySelectorAll("#hole-list .heart").forEach((it) => {
@@ -251,8 +252,17 @@ class HoleContext {
         like[id] = true;
         localStorage.setItem("hole-like", JSON.stringify(like));
         document.querySelector(`#like-num-${id}`).innerHTML = `${Number(document.querySelector(`#like-num-${id}`).innerHTML) + 1}`;
+        this.setlike();
       }
     });
+  }
+  setlike() {
+    var _a;
+    const ls = localStorage.getItem("hole-like");
+    const like = ls ? JSON.parse(ls) : {};
+    for (const key in like) {
+      (_a = document.querySelector("[myid='" + key + "']")) == null ? void 0 : _a.classList.add("liked");
+    }
   }
 }
 /*!
@@ -317,6 +327,7 @@ const _Hole = class {
 };
 let Hole = _Hole;
 __publicField(Hole, "defaultConf", defaultConf);
+const version = "0.0.7";
 /*!
  * ==========================================================================
  * "CoPoKo Hole" License
@@ -338,5 +349,6 @@ __publicField(Hole, "defaultConf", defaultConf);
  * along with "CoPoKo Hole". If not, see <http://www.gnu.org/licenses/>.
  * ==========================================================================
 */
+console.log(`CoPoKo Hole v${version}`);
 export { Hole as default };
 //# sourceMappingURL=Hole.es.js.map
