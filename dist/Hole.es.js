@@ -154,6 +154,9 @@ function card(ctx) {
       ctx.like(id);
     });
   });
+  if (window.HoleLoadCardCallback) {
+    window.HoleLoadCardCallback();
+  }
 }
 function cardItem(e) {
   return `

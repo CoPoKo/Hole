@@ -41,6 +41,9 @@ export default function card(ctx: HoleContext) {
       ctx.like(id);
     })
   })
+  if (window.HoleLoadCardCallback) {
+    window.HoleLoadCardCallback()
+  }
 }
 
 function cardItem(e: HoleData) {
